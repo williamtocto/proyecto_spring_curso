@@ -28,7 +28,7 @@ public class UserControler {
 	@Autowired
 	private UserService useS;
 	
-	//Create a new user
+	//Create a new user..
 	@PostMapping
 	public ResponseEntity<?>create(@RequestBody User user){
 		return ResponseEntity.status(HttpStatus.CREATED).body(useS.save(user));
